@@ -7,7 +7,9 @@ authors = [
     { name = "loeeeee", email = "95266635+loeeeee@users.noreply.github.com" }
 ]
 requires-python = ">=3.13"
-dependencies = []
+dependencies = [
+    "django>=6.0.2",
+]
 
 [project.scripts]
 wikipedia-search-engine = "wikipedia_search_engine:main"

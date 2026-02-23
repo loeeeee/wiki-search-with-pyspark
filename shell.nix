@@ -28,5 +28,8 @@ pkgs.mkShell {
     export JAVA_HOME=${pkgs.openjdk21}
 
     echo "Python version: $(python --version)"
+
+    source .venv/bin/activate
+    echo "entering UV environment"
   '';
 }
