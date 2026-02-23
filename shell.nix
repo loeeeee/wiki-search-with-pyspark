@@ -34,12 +34,13 @@ pkgs.mkShell {
     # Set JAVA_HOME for PySpark
     export JAVA_HOME=${pkgs.openjdk21}
 
-    echo "Python version: $(python --version)"
-
-    # Source the completion script directly from the read-only Nix store
+    # Django autocomplete
     source ${django-bash-completion}
 
+    # Host Python version
+    echo "Host Python version: $(python --version)"
     source .venv/bin/activate
     echo "entering UV environment"
+    echo "venv Python version: $(python --version)"
   '';
 }
