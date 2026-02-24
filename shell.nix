@@ -13,6 +13,7 @@ pkgs.mkShell {
     (python314.withPackages (ps: with ps; [
       pip
       requests
+      pyyaml
 
       ### Observerbility
       tqdm
@@ -36,6 +37,9 @@ pkgs.mkShell {
 
     # Django autocomplete
     source ${django-bash-completion}
+
+    # Load environment variables from env.yaml
+    eval "$(python scripts/load_env.py)"
 
     # Host Python version
     echo "Host Python version: $(python --version)"

@@ -41,3 +41,21 @@ wikipedia-search-engine/
 - Uses `uv` for dependency management
 - Uses `django-admin` for project management
 
+## Environment Variables
+
+Environment variables are stored in `env.yaml` and automatically loaded when entering the nix shell.
+
+### Default Variables
+
+The following variables are created automatically if `env.yaml` does not exist:
+
+- `DEBUG`: Set to `false` by default
+- `SECRET_KEY`: Development key (change in production)
+- `DATABASE_URL`: SQLite database path
+- `LOG_LEVEL`: Set to `INFO`
+- `PYTHON_ENV`: Set to `development`
+
+### Modifying Environment Variables
+
+Edit `env.yaml` to customize environment variables, then re-enter the nix shell to reload them.
+
