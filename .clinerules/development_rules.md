@@ -10,9 +10,7 @@ Expect python 3.13 and above.
 
 The development environment is NixOS.
 
-Always use shell.nix to config project environment.
-
-Always run python using nix-shell.
+Always run python using venv and uv.
 
 ## Coding
 
@@ -51,6 +49,8 @@ Always use a modular design with helper functions.
 Always print a concise report after script execution.
 
 Always write doc string for each function.
+
+Always use Django binary to handle Django related tasks.
 
 ## Documentation
 
