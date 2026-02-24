@@ -1,7 +1,7 @@
 [project]
 name = "wikipedia-search-engine"
 version = "0.1.0"
-description = "A toy project for learning PySpark"
+description = "A Django web application with PySpark async data processing engine for searching Wikipedia articles."
 readme = "README.md"
 authors = [
     { name = "loeeeee", email = "95266635+loeeeee@users.noreply.github.com" }
@@ -10,9 +10,6 @@ requires-python = ">=3.13"
 dependencies = [
     "django>=6.0.2",
 ]
-
-[project.scripts]
-wikipedia-search-engine = "wikipedia_search_engine:main"
 
 [build-system]
 requires = ["uv_build>=0.10.2,<0.11.0"]
